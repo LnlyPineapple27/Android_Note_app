@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="15dp">
+    <RelativeLayout
+        android:id="@+id/rel_layout"
+        android:background="@color/pale_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--text view for our course name-->
+        <TextView
+            android:id="@+id/idNoteName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Note Title"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/idNoteTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idNoteName"
+            android:padding="5dp"
+            android:textStyle="italic"
+            android:text="Note Tag"
+            android:textSize="15dp"
+            android:textColor="#635E5E" />
+        <TextView
+            android:id="@+id/idNoteData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idNoteTag"
+            android:padding="5dp"
+            android:text="Note Data"
+            android:textSize="15dp"
+            android:textColor="#635E5E" />
+        <TextView
+            android:id="@+id/idNoteTimeStamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idNoteData"
+            android:padding="5dp"
+            android:text="Thu, Sep 29 1988"
+            android:textSize="10dp"
+            android:textColor="#635E5E" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
